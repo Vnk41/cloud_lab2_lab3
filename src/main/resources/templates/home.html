@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>S3Vision Application</title>
+</head>
+<body>
+    <h1>S3VisionApplication</h1>
+    <label><b>List of buckets</b></label>
+    <div th:text="${bucketlist}"></div>
+    <p></p>
+    <label><b>Files in <div th:text="${bucketlist}"></div></b></label>
+    <div th:text="${bucketlistFiles}"></div>
+    <h4>Loaded Image</h4>
+    <p><img src="images/test.jpg"></img></p>
+    <p></p>
+    <h4>Mail Cloud Response</h4>
+    <div th:text="${response}"></div>
+
+    <p></p>
+</body>
+</html>
